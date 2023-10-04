@@ -1,0 +1,83 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.frontpage {
+    
+    height: 1000px;
+    background-color: lightgray;
+    position: relative;
+}
+
+.intro {
+    height: 1000px;
+    
+}
+
+.project {
+    height: 1000px;
+    background-color: lightgray;
+}
+
+.skills {
+    height: 1000px;
+}
+
+.footer {
+    height: 50px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 1. not-provided 클래스를 기본적으로 보이지 않도록 설정 */
+.not-provided {
+    display: none;
+}
+
+/* 2. 470px 밑으로 가면, not-provided 만 보이도록 설정 */
+@media (max-width: 575px) {
+    main,
+    section,
+    nav,
+    footer, {
+        display: none ;
+    }
+    .not-provided {
+        display: block;
+    }
+}
+
+
+.universe {
+    position: relative
+}
+
+.in_text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 20px; 
+    color: white; 
+    font-size: 55px;
+    text-align: center;
+}
+
+.highlight {
+    color: #e31b6d;
+}
+
+.canvas {
+    background: url(http://findmatthew.com/style/../img/filler.png) center center/cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
